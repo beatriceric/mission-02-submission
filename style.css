@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex: 50%;
+  height: 712px;
+  padding: 10px;
+  margin: 20px;
+  /* background-color: #cccccc; */
+  text-align: center;
+  border: solid #f50101;
+  border-width: 0.5px 0.5px;
+  outline: solid #f50101;
+  outline-offset: 4px;
+  position: relative; /* Ensure the column is the reference for absolute positioning */
+}
+
+.index-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 4%;
+}
+
+.page-index {
+  font-family: "Pinyon Script";
+  font-size: 29px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  color: rgb(109, 109, 109);
+}
+
+h2 {
+  font-family: "Ibarra Real Nova";
+  font-size: 21px;
+  font-weight: 100;
+  color: rgb(71, 71, 71);
+  letter-spacing: -0.2px;
+}
+
+h3 {
+  font-family: "Pinyon Script";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(109, 109, 109);
+  letter-spacing: -0.2px;
+}
+
+hr {
+  height: 0.25px;
+  width: 14%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.65em auto;
+  padding-bottom: 3.5em;
+}
+
+#image-jesus {
+  float: right;
+  width: 23%;
+  padding-right: 3em;
+  padding-top: 4em;
+}
+
+#selected-image {
+  height: 356px; /* Set height */
+  margin: 0 20px;
+}
+
+p {
+  float: left;
+  padding-left: 3em;
+  padding-top: 1.2em;
+  font-family: "Ibarra Real Nova";
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #d10000;
+}
+
+/* 📣 Tooltips ----- NOT SHOWING */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 125%; 
+  left: 50%;
+  margin-left: -60px; 
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip.show .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} 
